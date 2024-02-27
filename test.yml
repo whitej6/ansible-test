@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  gather_facts: true
+  tasks:
+    - ansible.builtin.debug:
+        msg: "{{ ansible_facts }}"
+    - ansible.builtin.debug:
+        msg: "{{ hostvars }}"
+
+    - ansible.builtin.pause:
+        minutes: 15
