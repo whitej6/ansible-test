@@ -7,5 +7,29 @@
     - ansible.builtin.debug:
         msg: "{{ hostvars }}"
 
-    - ansible.builtin.pause:
-        minutes: 15
+    - ansible.builtin.gather_facts:
+        parallel: yes
+    - ansible.builtin.gather_facts:
+        parallel: yes
+    - ansible.builtin.gather_facts:
+        parallel: yes
+    - ansible.builtin.gather_facts:
+        parallel: yes
+    - ansible.builtin.gather_facts:
+        parallel: yes
+    - ansible.builtin.gather_facts:
+        parallel: yes
+    - ansible.builtin.gather_facts:
+        parallel: yes
+    - ansible.builtin.gather_facts:
+        parallel: yes
+    - ansible.builtin.gather_facts:
+        parallel: yes
+    - ansible.builtin.gather_facts:
+        parallel: yes
+    - ansible.builtin.gather_facts:
+        parallel: yes
+    - ansible.builtin.gather_facts:
+        parallel: yes
+    - ansible.builtin.gather_facts:
+        parallel: yes
